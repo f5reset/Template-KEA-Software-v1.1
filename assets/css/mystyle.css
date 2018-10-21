@@ -1,0 +1,25 @@
+/*
+
+Project     : KEA Software - Responsive Bootstrap HTML Admin Dashboard
+Version     : 1.1
+Author      : f5.reset@gmail.com
+Author URI  : https://www.facebook.com/f5reset
+
+*/
+.sidebar--nav {
+    padding: 0px 0 21px;
+}
+.sidebar--nav>ul>li+.is-dropdown {
+    margin-top: 0;
+}
+.btn-dangnhap{
+    padding: 25px;
+}
+.full{
+    padding-left: unset;
+    background: white;
+}
+.welcome{
+    margin: 0 auto;
+    text-align: center
+}
