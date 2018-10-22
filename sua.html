@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en" class="no-outlines">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>KEA Software v1.1</title>
+
+    <meta name="author" content="f5.reset@gmail.com">
+    <meta name="description" content="KEA Software - Responsive Bootstrap HTML Admin Dashboard">
+    <meta name="keywords" content="f5.reset themes">
+
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700%7CMontserrat:400,500">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css">
+    <link rel="stylesheet" href="assets/css/perfect-scrollbar.min.css">
+    <link rel="stylesheet" href="assets/css/morris.min.css">
+    <link rel="stylesheet" href="assets/css/select2.min.css">
+    <link rel="stylesheet" href="assets/css/jquery-jvectormap.min.css">
+    <link rel="stylesheet" href="assets/css/horizontal-timeline.min.css">
+    <link rel="stylesheet" href="assets/css/weather-icons.min.css">
+    <link rel="stylesheet" href="assets/css/dropzone.min.css">
+    <link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css">
+    <link rel="stylesheet" href="assets/css/ion.rangeSlider.skinFlat.min.css">
+    <link rel="stylesheet" href="assets/css/datatables.min.css">
+    <link rel="stylesheet" href="assets/css/fullcalendar.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/sweetalert.min.css">
+    <link rel="stylesheet" href="assets/css/sweetalert-overrides.css">
+    <link rel="stylesheet" href="assets/css/mystyle.css">
+</head>
+<body>
+<div class="wrapper">
+    <header class="navbar navbar-fixed">
+        <div class="navbar--header">
+            <a href="index.html" class="logo"> <img src="assets/img/logo-white.png" alt=""> </a>
+        </div>
+        <a href="#" class="navbar--btn" data-toggle="sidebar" title="Toggle Sidebar"> <i class="fa fa-bars"></i> </a>
+        <div class="navbar--nav ml-auto">
+            <ul class="nav">
+                <li class="nav-item dropdown nav--user"><a href="#" class="nav-link" data-toggle="dropdown"> <img
+                        src="assets/img/avatars/01_80x80.png" alt="" class="rounded-circle"> <span>Hoàng</span>
+                    <i class="fa fa-angle-down"></i> </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="profile.html"><i class="fas fa-user"></i>Thông tin tài khoản</a></li>
+                        <li><a href="chage-pass.html"><i class="fas fa-key"></i>Đổi mật khẩu</a></li>
+                        <li class="dropdown-divider"></li>
+                        <li><a href="#" data-sweet-alert="log-out"><i class="fas fa-sign-out-alt"></i>Đăng xuất</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+    </header>
+    <main class="main--container">
+        <aside class="sidebar" data-trigger="scrollbar">
+            <div class="sidebar--nav">
+                <ul>
+                    <li>
+                        <ul>
+                            <li class="active"><a href="index.html"> <i class="fa fa-home"></i> <span>Trang chủ</span> </a></li>
+                            <li><a href="QL-User.html"> <i class="fa fa-user"></i> <span>Quản lý tài khoản</span> </a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">QUẢN LÝ DỊCH VỤ DHCPv4</a>
+                        <ul>
+                            <li><a href="DKDV-v4.html"> <i class="fa fa-th"></i> <span>Điều khiển dịch vụ</span> </a>
+                            </li>
+                            <li><a href="#"> <i class="fa fa-th-list"></i> <span>Thiết lập cấu hình</span> </a>
+                                <ul>
+                                    <li><a href="interface-v4.html">Interface</a></li>
+                                    <li><a href="option-v4.html">Option</a></li>
+                                    <li><a href="subnet-v4.html">Subnet</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="history-v4.html"> <i class="fa fa-th-list"></i> <span>Lịch sử</span> </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">QUẢN LÝ DỊCH VỤ DHCPv6</a>
+                        <ul>
+                            <li><a href="DKDV-v4.html"> <i class="fa fa-th"></i> <span>Điều khiển dịch vụ</span> </a>
+                            </li>
+                            <li><a href="#"> <i class="fa fa-th-list"></i> <span>Thiết lập cấu hình</span> </a>
+                                <ul>
+                                    <li><a href="interface-v4.html">Interface</a></li>
+                                    <li><a href="option-v4.html">Option</a></li>
+                                    <li><a href="subnet-v4.html">Subnet</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="history-v4.html"> <i class="fa fa-th-list"></i> <span>Lịch sử</span> </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a href="#">QUẢN LÝ TRẠNG THÁI</a>
+                        <ul>
+                            <li><a href="#"> <i class="fa fa-th"></i> <span>Theo dõi hoạt động máy chủ</span> </a>
+                                <ul>
+                                    <li><a href="TrangthaiTB.html">Trạng thái thiết bị</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </aside>
+        <section class="page--header">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6"><h2 class="page--title h5">Quản lý người dùng</h2>
+                        <ul class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
+                            <li class="breadcrumb-item"><a href="QL-User.html">Quản lý người dùng</a></li>
+                            <li class="breadcrumb-item active"><span>Sửa</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="main--content">
+            <div class="panel">
+                <div class="panel-content">
+                    <form>
+                        <div class="form-group">
+                            <label for="username">Tài khoản</label>
+                            <input type="text" class="form-control" id="username" placeholder="Tài khoản">
+                        </div>
+                        <div class="form-group">
+                            <label for="password">Email</label>
+                            <input type="password" class="form-control" id="password" placeholder="Mật khẩu">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Phân quyền</label>
+                            <select class="form-control">
+                                <option>Admin</option>
+                                <option>Quản lý</option>
+                                <option>Member</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Trạng thái</label>
+                            <select class="form-control">
+                                <option>Hoạt động</option>
+                                <option>Khóa</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="btn btn-success">Lưu lại</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <footer class="main--footer main--footer-light">
+            <p>Copyright &copy; <a href="index.html">KEA Software v1.1</a>. All Rights Reserved.
+            </p>
+        </footer>
+    </main>
+
+</div>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery-ui.min.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/perfect-scrollbar.min.js"></script>
+<script src="assets/js/jquery.sparkline.min.js"></script>
+<script src="assets/js/raphael.min.js"></script>
+<script src="assets/js/morris.min.js"></script>
+<script src="assets/js/select2.min.js"></script>
+<script src="assets/js/jquery-jvectormap.min.js"></script>
+<script src="assets/js/jquery-jvectormap-world-mill.min.js"></script>
+<script src="assets/js/horizontal-timeline.min.js"></script>
+<script src="assets/js/jquery.validate.min.js"></script>
+<script src="assets/js/jquery.steps.min.js"></script>
+<script src="assets/js/dropzone.min.js"></script>
+<script src="assets/js/ion.rangeSlider.min.js"></script>
+<script src="assets/js/datatables.min.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="assets/js/sweetalert.min.js"></script>
+<script src="assets/js/sweetalert-init.js"></script>
+</body>
+</html>
+
+
