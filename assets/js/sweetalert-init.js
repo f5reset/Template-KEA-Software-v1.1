@@ -46,9 +46,10 @@
                         html:
                             '<form action="#"><div class="form-group">\n' +
                             '      <label for="delay">Delay</label> <br>\n' +
-                            '      <input type="number" class="form-control" id="delay" placeholder="Giây">\n' +
+                            '      <input type="number" class="form-control" id="delay" placeholder="Thời gian tạm dừng (giây)">\n' +
                             '</div><button type="submit" class="btn btn-success">Delay</button><form>',
                         showConfirmButton: false,
+                        showCloseButton: true,
                     });
                     break;
 
