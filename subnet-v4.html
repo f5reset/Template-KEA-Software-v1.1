@@ -60,13 +60,13 @@
                 <ul>
                     <li>
                         <ul>
-                            <li class="active"><a href="index.html"> <i class="fa fa-home"></i> <span>Trang chủ</span> </a></li>
-                            <li><a href="QL-User.html"> <i class="fa fa-user"></i> <span>Quản lý tài khoản</span> </a></li>
+                            <li><a href="index.html"> <i class="fa fa-home"></i> <span>Trang chủ</span> </a></li>
+                            <li  class="active"><a href="QL-User.html"> <i class="fa fa-user"></i> <span>Quản lý tài khoản</span> </a></li>
                         </ul>
                     </li>
                     <li><a href="#">QUẢN LÝ DỊCH VỤ DHCPv4</a>
                         <ul>
-                            <li><a href="DKDV-v4.html"> <i class="fa fa-th"></i> <span>Điều khiển dịch vụ</span> </a>
+                            <li><a href="dieukhienDV-v4.html"> <i class="fa fa-th"></i> <span>Điều khiển dịch vụ</span> </a>
                             </li>
                             <li><a href="#"> <i class="fa fa-th-list"></i> <span>Thiết lập cấu hình</span> </a>
                                 <ul>
@@ -75,13 +75,13 @@
                                     <li><a href="subnet-v4.html">Subnet</a></li>
                                 </ul>
                             </li>
-                            <li><a href="history-v4.html"> <i class="fa fa-th-list"></i> <span>Lịch sử</span> </a>
+                            <li><a href="lichsu-v4.html"> <i class="fa fa-th-list"></i> <span>Lịch sử</span> </a>
                             </li>
                         </ul>
                     </li>
                     <li><a href="#">QUẢN LÝ DỊCH VỤ DHCPv6</a>
                         <ul>
-                            <li><a href="DKDV-v4.html"> <i class="fa fa-th"></i> <span>Điều khiển dịch vụ</span> </a>
+                            <li><a href="dieukhienDV-v4.html"> <i class="fa fa-th"></i> <span>Điều khiển dịch vụ</span> </a>
                             </li>
                             <li><a href="#"> <i class="fa fa-th-list"></i> <span>Thiết lập cấu hình</span> </a>
                                 <ul>
@@ -90,7 +90,7 @@
                                     <li><a href="subnet-v4.html">Subnet</a></li>
                                 </ul>
                             </li>
-                            <li><a href="history-v4.html"> <i class="fa fa-th-list"></i> <span>Lịch sử</span> </a>
+                            <li><a href="lichsu-v4.html"> <i class="fa fa-th-list"></i> <span>Lịch sử</span> </a>
                             </li>
                         </ul>
                     </li>
@@ -109,11 +109,11 @@
         <section class="page--header">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6"><h2 class="page--title h5">Điều khiển dịch vụ DHCPv4</h2>
+                    <div class="col-lg-6"><h2 class="page--title h5">Thiết lập cấu hình DHCPv4</h2>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-                            <li class="breadcrumb-item"><span>Quản lý dịch vụ DHCPv4</span></li>
-                            <li class="breadcrumb-item active"><span>Lịch sử</span></li>
+                            <li class="breadcrumb-item"><span>Thiết lập cấu hình DHCPv4</span></li>
+                            <li class="breadcrumb-item active"><span>Subnet</span></li>
                         </ul>
                     </div>
                 </div>
@@ -122,40 +122,86 @@
         <section class="main--content">
             <div class="panel">
                 <div class="panel-heading">
-                    <form action="">
                     <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <input type="datetime-local" class="form-control" id="txt_v4_datetime">
-                        </div>
-                        <div class="col-md-4 col-sm-12">
-                            <button type="submit" id="btn_v4_timkiem" class="btn btn-inline btn-primary">Tìm kiếm</button>
+                        <div class="col-md-6 offset-md-6 col-sm-12 text-right">
+                            <a class="btn btn-success" href="sua-subnet-v4.html"><i class="fas fa-plus"></i> Thêm</a>
+                            <a class="btn btn-info" href="sua-subnet-v4.html"><i class="fas fa-redo"></i></a>
                         </div>
                     </div>
-                    </form>
                 </div>
-                <div class="panel-content cmd nen-den">
-                    <table>
-                        <tr>
-                            <td class="date-his">24/10/2018</td>
-                            <td class="time-his">10:24:36</td>
-                            <td class="content-his">Admin login</td>
-                        </tr>
-                        <tr>
-                            <td class="date-his">24/10/2018</td>
-                            <td class="time-his">10:28:06</td>
-                            <td class="content-his">Show this help message</td>
-                        </tr>
-                        <tr>
-                            <td class="date-his">25/10/2018</td>
-                            <td class="time-his">10:32:25</td>
-                            <td class="content-his">The path to a module that exports the server config</td>
-                        </tr>
-                        <tr>
-                            <td class="date-his">24/10/2018</td>
-                            <td class="time-his">10:40:12</td>
-                            <td class="content-his">The port to bind to, defaults to 8080</td>
-                        </tr>
-                    </table>
+                <div class="panel-content">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <thead>
+                            <tr>
+                                <th class="table-action">#</th>
+                                <th scope="col">Subnet</th>
+                                <th scope="col">Pools</th>
+                                <th scope="col">HW Address</th>
+                                <th scope="col">IP Address</th>
+                                <th class="table-action">Sửa</th>
+                                <th class="table-action">Xóa</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <th scope="row">1</th>
+                                <td>Subnet</td>
+                                <td>Pools</td>
+                                <td>HW Address</td>
+                                <td>IP Address</td>
+                                <td class="table-action"><a href="sua-subnet-v4.html" class="action-sua"><i class="fas fa-edit"></i></a></td>
+                                <td class="table-action"><a href="#" data-sweet-alert="action-xoa" class="action-xoa"><i class="fas fa-trash"></i></a></td>
+                            </tr>
+                                <tr>
+                                    <th scope="row">2</th>
+                                    <td>Subnet</td>
+                                    <td>Pools</td>
+                                    <td>HW Address</td>
+                                    <td>IP Address</td>
+                                    <td class="table-action"><a href="sua-subnet-v4.html" class="action-sua"><i class="fas fa-edit"></i></a></td>
+                                    <td class="table-action"><a href="#" data-sweet-alert="action-xoa" class="action-xoa"><i class="fas fa-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">3</th>
+                                    <td>Subnet</td>
+                                    <td>Pools</td>
+                                    <td>HW Address</td>
+                                    <td>IP Address</td>
+                                    <td class="table-action"><a href="sua-subnet-v4.html" class="action-sua"><i class="fas fa-edit"></i></a></td>
+                                    <td class="table-action"><a href="#" data-sweet-alert="action-xoa" class="action-xoa"><i class="fas fa-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">4</th>
+                                    <td>Subnet</td>
+                                    <td>Pools</td>
+                                    <td>HW Address</td>
+                                    <td>IP Address</td>
+                                    <td class="table-action"><a href="sua-subnet-v4.html" class="action-sua"><i class="fas fa-edit"></i></a></td>
+                                    <td class="table-action"><a href="#" data-sweet-alert="action-xoa" class="action-xoa"><i class="fas fa-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">5</th>
+                                    <td>Subnet</td>
+                                    <td>Pools</td>
+                                    <td>HW Address</td>
+                                    <td>IP Address</td>
+                                    <td class="table-action"><a href="sua-subnet-v4.html" class="action-sua"><i class="fas fa-edit"></i></a></td>
+                                    <td class="table-action"><a href="#" data-sweet-alert="action-xoa" class="action-xoa"><i class="fas fa-trash"></i></a></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">6</th>
+                                    <td>Subnet</td>
+                                    <td>Pools</td>
+                                    <td>HW Address</td>
+                                    <td>IP Address</td>
+                                    <td class="table-action"><a href="sua-subnet-v4.html" class="action-sua"><i class="fas fa-edit"></i></a></td>
+                                    <td class="table-action"><a href="#" data-sweet-alert="action-xoa" class="action-xoa"><i class="fas fa-trash"></i></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
                 </div>
             </div>
         </section>
@@ -164,7 +210,6 @@
             </p>
         </footer>
     </main>
-
 </div>
 
 

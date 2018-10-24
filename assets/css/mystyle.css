@@ -82,3 +82,6 @@ Author URI  : https://www.facebook.com/f5reset
 .btn-inline{
     display: inline-block;
 }
+.page--title {
+     text-transform: none;
+}

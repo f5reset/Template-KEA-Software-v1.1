@@ -60,7 +60,7 @@
                 <ul>
                     <li>
                         <ul>
-                            <li><a href="index.html"> <i class="fa fa-home"></i> <span>Trang chủ</span> </a></li>
+                            <li class="active"><a href="index.html"> <i class="fa fa-home"></i> <span>Trang chủ</span> </a></li>
                             <li><a href="QL-User.html"> <i class="fa fa-user"></i> <span>Quản lý tài khoản</span> </a></li>
                         </ul>
                     </li>
@@ -98,7 +98,7 @@
                         <ul>
                             <li><a href="#"> <i class="fa fa-th"></i> <span>Theo dõi hoạt động máy chủ</span> </a>
                                 <ul>
-                                    <li class="active"><a href="TrangthaiTB.html">Trạng thái thiết bị</a></li>
+                                    <li><a href="TrangthaiTB.html">Trạng thái thiết bị</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -109,11 +109,11 @@
         <section class="page--header">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6"><h2 class="page--title h5">Theo dõi hoạt động máy chủ</h2>
+                    <div class="col-lg-6"><h2 class="page--title h5">Điều khiển dịch vụ DHCPv4</h2>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-                            <li class="breadcrumb-item"><span>Theo dõi hoạt động máy chủ</span></li>
-                            <li class="breadcrumb-item active"><span>Trạng thái thiết bị</span></li>
+                            <li class="breadcrumb-item"><span>Quản lý dịch vụ DHCPv4</span></li>
+                            <li class="breadcrumb-item active"><span>Lịch sử</span></li>
                         </ul>
                     </div>
                 </div>
@@ -121,88 +121,41 @@
         </section>
         <section class="main--content">
             <div class="panel">
-                <div class="panel-content">
-                    <ul class="nav nav-tabs nav-tabs-line-top">
-                        <li class="nav-item"><a href="#tab1" data-toggle="tab" class="nav-link active">Lease 4</a></li>
-                        <li class="nav-item"><a href="#tab2" data-toggle="tab" class="nav-link">Lease 6</a></li>
-                    </ul>
-
-                    <div class="tab-content">
-                    <div class="tab-pane fade show active" id="tab1">
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Username</th>
-                                    <th scope="col">Phân quyền</th>
-                                    <th scope="col">Trạng thái</th>
-                                    <th class="table-action-2">Xem</th>
-                                    <th class="table-action-2">Sửa</th>
-                                    <th class="table-action-2">Xóa</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>admin</td>
-                                    <td>Admin</td>
-                                    <td><strong class="text-success">Hoạt động</strong></td>
-                                    <td class="table-action"><a href="profile.html" class="action-xem"><i class="fas fa-eye"></i></a></td>
-                                    <td class="table-action"><a href="sua.html" class="action-sua"><i class="fas fa-edit"></i></a></td>
-                                    <td class="table-action"><a href="#" data-sweet-alert="action-xoa" class="action-xoa"><i class="fas fa-trash"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>admin</td>
-                                    <td>Admin</td>
-                                    <td><strong class="text-dark">Khóa</strong></td>
-                                    <td class="table-action"><a href="profile.html" class="action-xem"><i class="fas fa-eye"></i></a></td>
-                                    <td class="table-action"><a href="sua.html" class="action-sua"><i class="fas fa-edit"></i></a></td>
-                                    <td class="table-action"><a href="#" data-sweet-alert="action-xoa" class="action-xoa"><i class="fas fa-trash"></i></a></td>
-                                </tr>
-                                </tbody>
-                            </table>
+                <div class="panel-heading">
+                    <form action="">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <input type="datetime-local" class="form-control" id="txt_v4_datetime">
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <button type="submit" id="btn_v4_timkiem" class="btn btn-inline btn-success">Tìm kiếm</button>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="tab2">
-                        <div class="table-responsive">
-                            <table class="table table-bordered">
-                                <thead>
-                                <tr>
-                                    <th scope="col">#</th>
-                                    <th scope="col">Username</th>
-                                    <th scope="col">Phân quyền</th>
-                                    <th scope="col">Trạng thái</th>
-                                    <th class="table-action-2">Xem</th>
-                                    <th class="table-action-2">Sửa</th>
-                                    <th class="table-action-2">Xóa</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                <tr>
-                                    <th scope="row">1</th>
-                                    <td>admin</td>
-                                    <td>Admin</td>
-                                    <td><strong class="text-success">Hoạt động</strong></td>
-                                    <td class="table-action"><a href="profile.html" class="action-xem"><i class="fas fa-eye"></i></a></td>
-                                    <td class="table-action"><a href="sua.html" class="action-sua"><i class="fas fa-edit"></i></a></td>
-                                    <td class="table-action"><a href="#" data-sweet-alert="action-xoa" class="action-xoa"><i class="fas fa-trash"></i></a></td>
-                                </tr>
-                                <tr>
-                                    <th scope="row">2</th>
-                                    <td>admin</td>
-                                    <td>Admin</td>
-                                    <td><strong class="text-dark">Khóa</strong></td>
-                                    <td class="table-action"><a href="profile.html" class="action-xem"><i class="fas fa-eye"></i></a></td>
-                                    <td class="table-action"><a href="sua.html" class="action-sua"><i class="fas fa-edit"></i></a></td>
-                                    <td class="table-action"><a href="#" data-sweet-alert="action-xoa" class="action-xoa"><i class="fas fa-trash"></i></a></td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
+                    </form>
                 </div>
+                <div class="panel-content cmd nen-den">
+                    <table>
+                        <tr>
+                            <td class="date-his">24/10/2018</td>
+                            <td class="time-his">10:24:36</td>
+                            <td class="content-his">Admin login</td>
+                        </tr>
+                        <tr>
+                            <td class="date-his">24/10/2018</td>
+                            <td class="time-his">10:28:06</td>
+                            <td class="content-his">Show this help message</td>
+                        </tr>
+                        <tr>
+                            <td class="date-his">25/10/2018</td>
+                            <td class="time-his">10:32:25</td>
+                            <td class="content-his">The path to a module that exports the server config</td>
+                        </tr>
+                        <tr>
+                            <td class="date-his">24/10/2018</td>
+                            <td class="time-his">10:40:12</td>
+                            <td class="content-his">The port to bind to, defaults to 8080</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </section>
