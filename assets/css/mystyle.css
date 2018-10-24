@@ -85,3 +85,7 @@ Author URI  : https://www.facebook.com/f5reset
 .page--title {
      text-transform: none;
 }
+.nav-link.active {
+    font-weight: bold;
+    border-color: #2bb3c0 #ebebea #fff;
+}
