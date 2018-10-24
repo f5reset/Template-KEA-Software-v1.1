@@ -70,3 +70,15 @@ Author URI  : https://www.facebook.com/f5reset
     width: 7%;
     text-align: center;
 }
+.date-his, .time-his{
+    width: 10%;
+}
+.time-his{
+    padding-left: 10px;
+}
+.content-his{
+    width: 80%;
+}
+.btn-inline{
+    display: inline-block;
+}

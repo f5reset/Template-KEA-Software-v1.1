@@ -121,14 +121,41 @@
         </section>
         <section class="main--content">
             <div class="panel">
-                <div class="panel-content">
-                    <div class="cmd nen-den">
-                        <p>F1: Copy one character at a time from the the previous command you typed. Press the F1 key repeatedly to type the command you previously typed, character by character.</p>
-
-                        <p>F2: Copy part of the command you previously typed. You’ll be prompted to enter a character. The system will search forward in the previous command you typed and automatically copy the text up to, but not including, that character. For example, if the last command you ran was “ping google.com”, you could press “F2”, type “o”, press “Enter”, and “ping g” would appear at the prompt.</p>
-
-                        <p>F3: Copy part of the command you previously typed. The system will start from the current character position and automatically copy the remainder of the text from that position on the previous line. For example, let’s say the last command you typed was “ping -4 google.com”. You could type “ping -6”, press “F3″, and the system would automatically fill in ” google.com”, making the current line “ping -6 google.com”.</p>
+                <div class="panel-heading">
+                    <form action="">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <input type="datetime-local" class="form-control" id="txt_v4_datetime">
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <button type="submit" id="btn_v4_timkiem" class="btn btn-inline btn-primary">Tìm kiếm</button>
+                        </div>
                     </div>
+                    </form>
+                </div>
+                <div class="panel-content cmd nen-den">
+                    <table>
+                        <tr>
+                            <td class="date-his">24/10/2018</td>
+                            <td class="time-his">10:24:36</td>
+                            <td class="content-his">Admin login</td>
+                        </tr>
+                        <tr>
+                            <td class="date-his">24/10/2018</td>
+                            <td class="time-his">10:28:06</td>
+                            <td class="content-his">Show this help message</td>
+                        </tr>
+                        <tr>
+                            <td class="date-his">25/10/2018</td>
+                            <td class="time-his">10:32:25</td>
+                            <td class="content-his">The path to a module that exports the server config</td>
+                        </tr>
+                        <tr>
+                            <td class="date-his">24/10/2018</td>
+                            <td class="time-his">10:40:12</td>
+                            <td class="content-his">The port to bind to, defaults to 8080</td>
+                        </tr>
+                    </table>
                 </div>
             </div>
         </section>
