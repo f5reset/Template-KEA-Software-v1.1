@@ -20,7 +20,7 @@
                         text: 'Bạn thực sự muốn đăng xuất?',
                         showConfirmButton: true,
                         showCancelButton: true,
-                        customClass: 'log-out-popup',
+                        customClass: 'action-logout',
                         confirmButtonText: 'Đăng xuất',
                         confirmButtonColor: '#ff4040',
                         cancelButtonText: 'Hủy'
@@ -34,7 +34,7 @@
                         type: 'warning',
                         showConfirmButton: true,
                         showCancelButton: true,
-                        customClass: 'action-xoa-popup',
+                        customClass: 'action-xoa',
                         confirmButtonText: 'Xóa',
                         confirmButtonColor: '#ff4040',
                         cancelButtonText: 'Hủy'
@@ -59,9 +59,35 @@
                         type: 'warning',
                         showConfirmButton: true,
                         showCancelButton: true,
-                        customClass: 'action-shutdown-popup',
+                        customClass: 'action-shutdown',
                         confirmButtonText: 'Shut down',
                         confirmButtonColor: '#ff4040',
+                        cancelButtonText: 'Hủy'
+                    });
+                    break;
+
+                case 'action-reload':
+                    swal( {
+                        title: 'Bạn muốn khởi động lại Server?',
+                        type: 'warning',
+                        showConfirmButton: true,
+                        showCancelButton: true,
+                        customClass: 'action-reload',
+                        confirmButtonText: 'Khởi động lại',
+                        confirmButtonColor: '#17a2b8',
+                        cancelButtonText: 'Hủy'
+                    });
+                    break;
+
+                case 'action-enable':
+                    swal( {
+                        title: 'Bạn muốn khởi chạy Server?',
+                        type: 'warning',
+                        showConfirmButton: true,
+                        showCancelButton: true,
+                        customClass: 'action-enable',
+                        confirmButtonText: 'Khởi chạy',
+                        confirmButtonColor: '#28a745',
                         cancelButtonText: 'Hủy'
                     });
                     break;

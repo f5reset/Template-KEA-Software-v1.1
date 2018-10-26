@@ -60,13 +60,13 @@
                 <ul>
                     <li>
                         <ul>
-                            <li ><a href="index.html"> <i class="fa fa-home"></i> <span>Trang chủ</span> </a></li>
+                            <li class="active"><a href="index.html"> <i class="fa fa-home"></i> <span>Trang chủ</span> </a></li>
                             <li><a href="QL-User.html"> <i class="fa fa-user"></i> <span>Quản lý tài khoản</span> </a></li>
                         </ul>
                     </li>
                     <li><a href="#">QUẢN LÝ DỊCH VỤ DHCPv4</a>
                         <ul>
-                            <li class="active"><a href="dieukhienDV-v4.html"> <i class="fa fa-th"></i> <span>Điều khiển dịch vụ</span> </a>
+                            <li><a href="dieukhienDV-v4.html"> <i class="fa fa-th"></i> <span>Điều khiển dịch vụ</span> </a>
                             </li>
                             <li><a href="#"> <i class="fa fa-th-list"></i> <span>Thiết lập cấu hình</span> </a>
                                 <ul>
@@ -75,7 +75,7 @@
                                     <li><a href="subnet-v4.html">Subnet</a></li>
                                 </ul>
                             </li>
-                            <li><a href="lichsu-v4.html"> <i class="fa fa-th-list"></i> <span>Lịch sử</span> </a>
+                            <li><a href="lichsu-v4.html"> <i class="fa fa-th"></i></i> <span>Lịch sử</span> </a>
                             </li>
                         </ul>
                     </li>
@@ -90,17 +90,14 @@
                                     <li><a href="subnet-v4.html">Subnet</a></li>
                                 </ul>
                             </li>
-                            <li><a href="lichsu-v4.html"> <i class="fa fa-th-list"></i> <span>Lịch sử</span> </a>
+                            <li><a href="lichsu-v4.html"> <i class="fa fa-th"></i> <span>Lịch sử</span> </a>
                             </li>
                         </ul>
                     </li>
                     <li><a href="#">QUẢN LÝ TRẠNG THÁI</a>
                         <ul>
-                            <li><a href="#"> <i class="fa fa-th"></i> <span>Theo dõi hoạt động máy chủ</span> </a>
-                                <ul>
-                                    <li><a href="TrangthaiTB.html">Trạng thái thiết bị</a></li>
-                                </ul>
-                            </li>
+                            <li><a href="TheodoiHDMC.html"> <i class="fa fa-th"></i> <span>Theo dõi hoạt động máy chủ</span></a></li>
+                            <li><a href="TrangthaiTB.html"> <i class="fa fa-th"></i> Trạng thái thiết bị</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -122,21 +119,42 @@
         <section class="main--content">
             <div class="panel">
                 <div class="panel-content">
+                    <div class="table-responsive">
+                        <table class="table table-bordered">
+                            <tbody>
+                            <tr>
+                                <th scope="row" style="width: 30%">DHCPv4 server</th>
+                                <td><strong class="text-success">Hoạt động</strong></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">DHCPv6 server</th>
+                                <td><strong class="text-success">Hoạt động</strong></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">DHCP DDNS</th>
+                                <td><strong class="text-danger">Tắt</strong></td>
+                            </tr>
+                            <tr>
+                                <th scope="row">Control Agent </th>
+                                <td><strong class="text-success">Hoạt động</strong></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
                     <div class="row pad-50">
                         <div class="col-md-3 col-sm-12 text-center">
-                            <a class="btn-success btn-cn" href="#">Enable</a>
+                            <a class="btn-success btn-cn" data-sweet-alert="action-enable" href="#">Enable</a>
                         </div>
                         <div class="col-md-3 col-sm-12 text-center">
                             <a class="btn-default btn-cn" data-sweet-alert="action-disable" href="#">Disable</a>
                         </div>
                         <div class="col-md-3 col-sm-12 text-center">
-                            <a class="btn-info btn-cn" href="#">Reload</a>
+                            <a class="btn-info btn-cn" data-sweet-alert="action-reload" href="#">Reload</a>
                         </div>
                         <div class="col-md-3 col-sm-12 text-center">
                             <a class="btn-danger btn-cn" data-sweet-alert="action-shutdown" href="#">Shutdown</a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </section>

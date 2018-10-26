@@ -89,3 +89,14 @@ Author URI  : https://www.facebook.com/f5reset
     font-weight: bold;
     border-color: #2bb3c0 #ebebea #fff;
 }
+.note-sm{
+    font-size: 90%;
+    margin-top: 5px;
+    font-style: italic;
+}
+.text-st{
+    font-size: 30px;
+}
+.low{ color: #28a745}
+.medium{ color: #ffc107}
+.hight{ color: #dc3545}
