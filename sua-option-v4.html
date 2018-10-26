@@ -81,16 +81,16 @@
                     </li>
                     <li><a href="#">QUẢN LÝ DỊCH VỤ DHCPv6</a>
                         <ul>
-                            <li><a href="dieukhienDV-v4.html"> <i class="fa fa-th"></i> <span>Điều khiển dịch vụ</span> </a>
+                            <li><a href="dieukhienDV-v6.html"> <i class="fa fa-th"></i> <span>Điều khiển dịch vụ</span> </a>
                             </li>
                             <li><a href="#"> <i class="fa fa-th-list"></i> <span>Thiết lập cấu hình</span> </a>
                                 <ul>
-                                    <li><a href="interface-v4.html">Interface</a></li>
-                                    <li><a href="option-v4.html">Option</a></li>
-                                    <li><a href="subnet-v4.html">Subnet</a></li>
+                                    <li><a href="interface-v6.html">Interface</a></li>
+                                    <li><a href="option-v6.html">Option</a></li>
+                                    <li><a href="subnet-v6.html">Subnet</a></li>
                                 </ul>
                             </li>
-                            <li><a href="lichsu-v4.html"> <i class="fa fa-th"></i> <span>Lịch sử</span> </a>
+                            <li><a href="lichsu-v6.html"> <i class="fa fa-th"></i> <span>Lịch sử</span> </a>
                             </li>
                         </ul>
                     </li>
@@ -106,11 +106,11 @@
         <section class="page--header">
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-lg-6"><h2 class="page--title h5">Điều khiển dịch vụ DHCPv4</h2>
+                    <div class="col-lg-6"><h2 class="page--title h5">Thiết lập cấu hình DHCPv4</h2>
                         <ul class="breadcrumb">
                             <li class="breadcrumb-item"><a href="index.html">Trang chủ</a></li>
-                            <li class="breadcrumb-item"><span>Quản lý dịch vụ DHCPv4</span></li>
-                            <li class="breadcrumb-item active"><span>Lịch sử</span></li>
+                            <li class="breadcrumb-item"><span>Thiết lập cấu hình DHCPv4</span></li>
+                            <li class="breadcrumb-item active"><span>Option</span></li>
                         </ul>
                     </div>
                 </div>
@@ -118,41 +118,22 @@
         </section>
         <section class="main--content">
             <div class="panel">
-                <div class="panel-heading">
-                    <form action="">
-                    <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <input type="datetime-local" class="form-control" id="txt_datetime_v4">
+                <div class="panel-content">
+                    <form>
+                        <div class="form-group">
+                            <label>Name</label>
+                            <input type="text" class="form-control" name="txt_name_option_v4" placeholder="Name">
                         </div>
-                        <div class="col-md-4 col-sm-12">
-                            <button type="submit" id="btn_timkiem_v4" class="btn btn-inline btn-success">Tìm kiếm</button>
+                        <div class="form-group">
+                            <label>Data name</label>
+                            <input type="text" class="form-control" name="txt_dataname_option_v4" placeholder="Data name">
                         </div>
-                    </div>
+                        <div class="form-group">
+                            <label>Data</label>
+                            <input type="text" class="form-control" name="txt_data_option_v4" placeholder="Data">
+                        </div>
+                        <button type="submit" class="btn btn-success">Lưu lại</button>
                     </form>
-                </div>
-                <div class="panel-content cmd nen-den">
-                    <table>
-                        <tr>
-                            <td class="date-his">24/10/2018</td>
-                            <td class="time-his">10:24:36</td>
-                            <td class="content-his">Admin login</td>
-                        </tr>
-                        <tr>
-                            <td class="date-his">24/10/2018</td>
-                            <td class="time-his">10:28:06</td>
-                            <td class="content-his">Show this help message</td>
-                        </tr>
-                        <tr>
-                            <td class="date-his">25/10/2018</td>
-                            <td class="time-his">10:32:25</td>
-                            <td class="content-his">The path to a module that exports the server config</td>
-                        </tr>
-                        <tr>
-                            <td class="date-his">24/10/2018</td>
-                            <td class="time-his">10:40:12</td>
-                            <td class="content-his">The port to bind to, defaults to 8080</td>
-                        </tr>
-                    </table>
                 </div>
             </div>
         </section>
@@ -186,3 +167,5 @@
 <script src="assets/js/sweetalert-init.js"></script>
 </body>
 </html>
+
+
