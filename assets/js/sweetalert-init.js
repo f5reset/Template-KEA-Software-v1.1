@@ -24,6 +24,9 @@
                         confirmButtonText: 'Đăng xuất',
                         confirmButtonColor: '#ff4040',
                         cancelButtonText: 'Hủy'
+                    }).then((result) => {
+                        var bien = '<%= Session["ten_bien_session"] %>';
+                        $.post('ten_file_php.php', {bien});
                     });
                     break;
 
