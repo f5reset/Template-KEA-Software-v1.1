@@ -1,4 +1,4 @@
-# KEA Software v1.1
+# Teamplate KEA Software v1.1
 Project     : KEA Software - Responsive Bootstrap HTML Admin Dashboard <br>
 Version     : 1.1 <br>
 Author      : Thịnh Minh <br>
