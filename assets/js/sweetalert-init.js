@@ -17,16 +17,15 @@
                 case 'log-out':
                     swal({
                         title: 'Đăng xuất!',
+                        type: 'warning',
                         text: 'Bạn thực sự muốn đăng xuất?',
-                        showConfirmButton: true,
-                        showCancelButton: true,
-                        customClass: 'action-logout',
-                        confirmButtonText: 'Đăng xuất',
-                        confirmButtonColor: '#ff4040',
-                        cancelButtonText: 'Hủy'
-                    }).then((result) => {
-                        var bien = '<%= Session["ten_bien_session"] %>';
-                        $.post('ten_file_php.php', {bien});
+                        html:
+                            '<form action="" method="post">\n' +
+                            '    <p>Bạn thực sự muốn đăng xuất</p> \n' +
+                            '    <button type="submit" name="btn-logout" class="btn btn-danger">Đăng xuất</button>\n' +
+                            '<form>',
+                        showConfirmButton: false,
+                        showCloseButton: true,
                     });
                     break;
 
